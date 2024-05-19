@@ -1,0 +1,239 @@
+.sign-in-container {
+    display: flex;
+    height: 100vh;
+    
+  }
+  
+  .left-side {
+    background-color: #605BFF;
+    color: white;
+    width: 50%;
+    padding:4%;
+    clip-path: polygon(0 0, 100% 0, 75% 100%, 0% 100%);
+  }
+  
+  .left-side h1 {
+    font-size: 48px;
+  }
+  
+  .social-icons {
+    margin-top: 100px;
+  }
+  
+  .social-icons a {
+    margin: 0 10px;
+    font-size: 24px;
+    color: white;
+  }
+  
+  .right-side {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 5%;
+    justify-content: center;
+    background-color: #F8FAFF;
+  }
+  
+  .right-side h2 {
+    font-size: 32px;
+  }
+  
+  .right-side p {
+    color: #666;
+  }
+  
+  .google-signin,
+  .apple-signin {
+    display: block;
+    margin: 25px 0;
+    border: none;
+    padding:10px;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+  }
+  
+ 
+  
+
+  form {
+    width: 100%;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* form label {
+    margin: 10px 0 5px;
+  } */
+  
+  form input {
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .forgot-password {
+    color: #5865f2;
+    text-decoration: none;
+    margin-bottom: 20px;
+  }
+  
+  .signin-button{
+    background-color: #5865f2;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  .sign-in-container {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .logo img {
+    width: 60px;
+  }
+  
+  .title {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-around;
+    height: 390px;
+    margin-top: 15%;
+    padding-left: 20%;
+  }
+  
+  .title .brand {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 72px;
+  }
+  
+  .social-icons img {
+    width: 190px;
+  }
+  
+  .right-side {
+    width: 50%;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .right-side .title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+  }
+  
+  .right-side .subtitle {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    padding-right: 170px;
+    padding-top: 15px;
+  }
+  
+  .social-login {
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+  }
+  
+  .social-login .social-button {
+    background: #fff;
+    width: 170px;
+    display: flex;
+    align-items: center;
+    height: 32px;
+    border-radius: 10px;
+    margin-right: 20px;
+  }
+  
+  .social-login .social-button img {
+    margin-left: 10px;
+  }
+  
+  .social-login .social-button div {
+    color: #858585;
+    font-weight: 400;
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+    padding-left: 10px;
+  }
+  
+  .social-login .social-button:last-child {
+    margin-right: 0;
+  }
+  
+  .form-container {
+    background: #fff;
+    margin-top: 20px;
+    padding: 5%;
+    width: 300px;
+    border-radius: 10px;
+  ;
+  }
+  
+  .form-container label {
+    font-family: 'Lato', sans-serif;
+  }
+  
+  .form-container input {
+    background: #f5f5f5;
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    padding: 8px;
+    margin-top: 8px;
+    margin-bottom: 16px;
+  }
+  
+  .form-container .forgot-password {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    color: #605bff;
+    display: block;
+    margin-bottom: 5px;
+    text-decoration: none;
+  }
+  
+   .signin-button {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    border-radius: 10px;
+    background-color: #605bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    width: 105%;
+    cursor: pointer;
+  }
+  
+  .register-link {
+    margin-top: 10px;
+    padding-left: 30px;
+    font-family: 'Lato', sans-serif;
+    display: flex;
+  }
+  
+  .register-link span {
+    color: #605bff;
+    cursor: pointer;
+  }
+  .title1 {
+   
+    margin-top: 15%;
+    padding-right: 200px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+  }
+  
+  
