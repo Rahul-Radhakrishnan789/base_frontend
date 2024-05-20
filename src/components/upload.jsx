@@ -14,28 +14,38 @@ export default function Upload() {
   };
 
   const handleClick = () => {
-    if (selectedFile) {
-      const reader = new FileReader();
-      reader.onload = function (event) {
-        const text = event.target.result;
-        Papa.parse(text, {
-          header: true,
-          skipEmptyLines: true,
-          complete: (result) => {
-            setArray(result.data);
-          },
-        });
-      };
-      reader.readAsText(selectedFile);
-    } else {
-      alert("Please select a file");
+    try {
+      if (selectedFile) {
+        const reader = new FileReader();
+        reader.onload = function (event) {
+          const text = event.target.result;
+          Papa.parse(text, {
+            header: true,
+            skipEmptyLines: true,
+            complete: (result) => {
+              setArray(result.data);
+            },
+          });
+        };
+        reader.readAsText(selectedFile);
+      } else {
+        alert("Please select a file");
+      }
+    } catch (error) {
+      console.error("error reading file",error)
     }
+  
   };
 
   const handleBrowseClick = () => {
-    document.getElementById("fileInput").click();
-    setArray([]);
-    setSelectedFile(null);
+    try {
+      document.getElementById("fileInput").click();
+      setArray([]);
+      setSelectedFile(null);
+    } catch (error) {
+      console.error("error fetchinf file",error)
+    }
+  
   };
 
   const handleDragOver = (event) => {

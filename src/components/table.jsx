@@ -5,43 +5,36 @@ export default function Table({ data }) {
   const [selectedTags, setSelectedTags] = useState({});
 
   const handleTagSelect = (index, tag) => {
-    setSelectedTags(prevState => {
-      const updatedTags = { ...prevState };
-      if (!updatedTags[index]) {
-        updatedTags[index] = [];
-      }
-      if (!updatedTags[index].includes(tag)) {
-        updatedTags[index].push(tag);
-      }
-      return updatedTags;
-    });
+    try {
+      setSelectedTags(prevState => {
+        const updatedTags = { ...prevState };
+        if (!updatedTags[index]) {
+          updatedTags[index] = [];
+        }
+        if (!updatedTags[index].includes(tag)) {
+          updatedTags[index].push(tag);
+        }
+        return updatedTags;
+      });
+    } catch (error) {
+      console.error("error",error)
+    }
+ 
   };
 
   const handleTagRemove = (index, tag) => {
-    setSelectedTags(prevState => {
-      const updatedTags = { ...prevState };
-      if (updatedTags[index]) {
-        updatedTags[index] = updatedTags[index].filter(t => t !== tag);
-      }
-      return updatedTags;
-    });
-  };
+    try {
+      setSelectedTags(prevState => {
+        const updatedTags = { ...prevState };
+        if (updatedTags[index]) {
+          updatedTags[index] = updatedTags[index].filter(t => t !== tag);
+        }
+        return updatedTags;
+      });
+    } catch (error) {
+      console.error("error removing tag",error)
+    }
 
-  const selectStyle = {
-    width: '70%',
-    padding: '10px',
-    border: '1px solid #ccc',
-    borderRadius: '4px',
-    backgroundColor: '#fff',
-    fontSize: '14px',
-
-  
-  };
-
-  const optionStyle = {
-    paddingTop: '20px',
-    margin:'10px',
-    border: '1px solid #ccc',
   };
 
   return (
@@ -98,3 +91,21 @@ export default function Table({ data }) {
     </>
   );
 }
+
+
+const selectStyle = {
+  width: '70%',
+  padding: '10px',
+  border: '1px solid #ccc',
+  borderRadius: '4px',
+  backgroundColor: '#fff',
+  fontSize: '14px',
+
+
+};
+
+const optionStyle = {
+  paddingTop: '20px',
+  margin:'10px',
+  border: '1px solid #ccc',
+};
